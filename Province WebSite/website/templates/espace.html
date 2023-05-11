@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<style>
+	.column img {
+		width: 900px;
+	}
+	@media (min-width:320px) and (max-width:792px)  {
+  .column img{
+    
+    width: 400px;
+   }
+}
+
+</style>
+
+<li><a href="/">ACCUEIL</a></li>
+<li><a href="/UNIVERSITE">UNIVERSITÉ</a></li>
+<li><a href="/FORMATIONS">FORMATIONS</a></li>
+<li><a class="active_1" href="/ESPACE">ESPACE ETUDIANT</a></li>
+<li><a href="/CONTACT">CONTACT</a></li>
+<li class="dropdown dropdown-large temp">
+	<a href="#" class="dropdown-toggle atag" data-toggle="dropdown">PLUS<b class="caret"></b></a>
+	
+	<ul class="dropdown-menu dropdown-menu-large row col-sm-12 font_1 drop_2">
+	  <li class="col-sm-3">
+		<ul>
+		  <li class="dropdown-header">UNIVERSITÉ</li>
+		  <li><a href="/UNIVERSITE"> Mot de président</a></li>
+		  <li class="disabled"><a> Présentation</a></li>
+		  <li class="divider"></li>
+		  <li class="dropdown-header">FORMATIONS</li>
+		  <li><a href="/">Formation initiale</a></li>
+		  <li class="disabled"><a>Formation continue</a></li>
+		</ul>
+	  </li>
+	  <li class="col-sm-3">
+		<ul>
+		  <li class="dropdown-header">ESPACE ETUDIANT</li>
+		  <li><a href="/">Services </a></li>
+		  <li class="disabled"><a>Bourses</a></li>
+		  <li class="divider"></li>
+		  <li class="dropdown-header">CONTACT</li>
+		  <li><a href="">FAQ</a></li>
+		  <li class="disabled"><a></a></li>
+		</ul>
+	  </li>
+	</ul>
+  </li>
+  <li class="dropdown"><a href="#" data-toggle="dropdown"><span class="fa fa-search"></span></a>
+	<ul class="dropdown-menu drop_1" style="min-width: 300px;">
+	  <li>
+		<div class="row_1">
+		  <div class="col-sm-12">
+			<form class="navbar-form navbar-left" role="search">
+			<div class="input-group">
+			  <input type="text" class="form-control" placeholder="Recherche">
+			  <span class="input-group-btn">
+				<button class="btn btn-primary" type="button">
+				  Recherche</button>
+			  </span>
+			</div>
+						</form>
+					  </div>
+					</div>
+				  </li>
+				</ul>
+			  </li>
+		</ul>
+
+	</div>
+  </nav>
+</div>
+</section>
+
+
+<div class="trending" style="background-color: #f5f5f5; "><h2 style="margin-top: 0 !important;"><span>GUIDE DE L’ÉTUDIANT</span></h2><p style="margin: auto	 !important;"></p></div>
+
+<section>
+	<div class="row">
+		<div class="column">
+			<img src="/static/img/guide1.png"  >
+			<img src="/static/img/guide2.png"  >
+
+		</div>
+	</div>
+</section>
+
+{% endblock %}
